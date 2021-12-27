@@ -24,4 +24,6 @@ public class StudentImpl implements StudentService {
     public List<Student> getAllStudents() {
         return repository.findAll();
     }
+
+
 }

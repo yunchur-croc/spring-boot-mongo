@@ -25,4 +25,14 @@ public class StudentController {
         List<Student> list = studentService.getAllStudents();
         return ResponseEntity.ok().body(list);
     }
+
+    @GetMapping("/id")
+    public ResponseEntity<Student> getStudent(){
+        Student s  = new Student();
+        s.setName("test");
+        s.setId("id1");
+        return ResponseEntity.ok().body(s);
+    }
+
+
 }
